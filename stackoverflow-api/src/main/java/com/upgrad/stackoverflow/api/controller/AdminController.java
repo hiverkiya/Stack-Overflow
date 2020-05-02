@@ -34,3 +34,4 @@ public class AdminController {
         userDeleteResponse.setStatus("USER SUCCESSFULLY DELETED");
         return new ResponseEntity<>(userDeleteResponse, HttpStatus.OK);
     }
+}
