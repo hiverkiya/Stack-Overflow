@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Added CODE_OF_CONDUCT.md" />
+    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented AdminController">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Stackoverflow-backend-develop-controllers" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -168,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586387513959</updated>
-      <workItem from="1588449761911" duration="1378000" />
+      <workItem from="1588449761911" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="Added README.md">
       <created>1588450371189</created>
@@ -184,7 +186,42 @@
       <option name="project" value="LOCAL" />
       <updated>1588450864421</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor Update">
+      <created>1588451157391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451157391</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented UserController">
+      <created>1588451227574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451227574</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Minor Update">
+      <created>1588451251100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451251100</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented CommonController">
+      <created>1588451295375</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451295375</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implemented AdminController">
+      <created>1588451389756</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451389756</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +241,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added README.md" />
     <MESSAGE value="Added CODE_OF_CONDUCT.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CODE_OF_CONDUCT.md" />
+    <MESSAGE value="Implemented UserController" />
+    <MESSAGE value="Minor Update" />
+    <MESSAGE value="Implemented CommonController" />
+    <MESSAGE value="Implemented AdminController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented AdminController" />
   </component>
   <component name="WindowStateProjectService">
     <state x="321" y="0" width="1030" height="732" key="#Project_Structure" timestamp="1588450009453">
@@ -220,6 +261,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1586683868409" />
+    <state x="466" y="127" width="430" height="481" key="FileChooserDialogImpl" timestamp="1588451459514">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="466" y="127" width="430" height="481" key="FileChooserDialogImpl/0.0.1366.735@0.0.1366.735" timestamp="1588451459514" />
     <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1586702177989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -252,10 +297,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586702177990" />
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588450865725">
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588451391243">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588450865725" />
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588451391243" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586766211852">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
