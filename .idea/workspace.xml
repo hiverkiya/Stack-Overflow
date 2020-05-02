@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented UserBusinessService.java">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Fixed AdminBusinessService.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586387513959</updated>
       <workItem from="1588449761911" duration="1719000" />
-      <workItem from="1588452924849" duration="1025000" />
+      <workItem from="1588452924849" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="Added README.md">
       <created>1588450371189</created>
@@ -252,7 +248,28 @@
       <option name="project" value="LOCAL" />
       <updated>1588454751665</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implemented UserBusinessService.java">
+      <created>1588454767825</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588454767825</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed AdminBusinessService.java">
+      <created>1588454966181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588454966181</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed AdminBusinessService.java">
+      <created>1588455055766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588455055766</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +296,8 @@
     <MESSAGE value="Implemented AdminController" />
     <MESSAGE value="Fixed QuestionBusinessService.java" />
     <MESSAGE value="Implemented UserBusinessService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented UserBusinessService.java" />
+    <MESSAGE value="Fixed AdminBusinessService.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed AdminBusinessService.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="321" y="0" width="1030" height="732" key="#Project_Structure" timestamp="1588450009453">
@@ -335,10 +353,10 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="570" y="239" width="422" height="260" key="MultipleFileMergeDialog/0.0.1366.735@0.0.1366.735" timestamp="1588453109108" />
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588454753024">
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588455064577">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588454753024" />
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588455064577" />
     <state x="1002" y="160" width="197" height="270" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1588453291175">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
