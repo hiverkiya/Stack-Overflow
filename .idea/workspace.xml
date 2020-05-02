@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented UserBusinessService.java">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackoverflow-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackoverflow-db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-db/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackoverflow-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackoverflow-service/src/main/java/com/upgrad/stackoverflow/service/business/UserBusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-service/src/main/java/com/upgrad/stackoverflow/service/business/UserBusinessService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -178,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586387513959</updated>
       <workItem from="1588449761911" duration="1719000" />
-      <workItem from="1588452924849" duration="385000" />
+      <workItem from="1588452924849" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="Added README.md">
       <created>1588450371189</created>
@@ -236,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588452982990</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implemented UserBusinessService.java">
+      <created>1588454742013</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588454742013</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented UserBusinessService.java">
+      <created>1588454751665</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588454751665</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,10 +335,10 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="570" y="239" width="422" height="260" key="MultipleFileMergeDialog/0.0.1366.735@0.0.1366.735" timestamp="1588453109108" />
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588453117694">
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588454753024">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588453117694" />
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588454753024" />
     <state x="1002" y="160" width="197" height="270" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1588453291175">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
