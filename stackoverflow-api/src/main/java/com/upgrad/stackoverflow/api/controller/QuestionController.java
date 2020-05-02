@@ -52,6 +52,7 @@ public class QuestionController {
      * @throws AuthorizationFailedException
      */
     @GetMapping("/all")
+
     public ResponseEntity<List<QuestionDetailsResponse>> getQuestions(@RequestHeader(value="Authorization") String authorization) throws AuthorizationFailedException
     {
         TypedQuery<QuestionEntity> questionList = questionBusinessService.getQuestions(authorization);

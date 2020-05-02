@@ -17,9 +17,11 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 
-@RequestMapping("/")
+@RequestMapping("")
+@RestController
 public class AnswerController {
 
 
@@ -36,7 +38,19 @@ public class AnswerController {
      * @throws AuthorizationFailedException
      * @throws InvalidQuestionException
      */
-
+    @PostMapping("/question/{questionId}/answer/create")
+    public ResponseEntity<AnswerResponse> postAnswer(@RequestBody AnswerRequest answerRequest, @RequestHeader String authorization, @PathVariable String questionId) throws AuthorizationFailedException, InvalidQuestionException
+    {
+        AnswerEntity answerEntity=new AnswerEntity();
+        answerEntity.setUuid(uuid.randomUuid().toString());
+        answerEntity.setAns(answerRequest.getAns());
+        answerEntity.setDate(ZoneDateTime.now());
+        QuestionEntity questionEntity = answerBusinessService.getQuestionByUuid(questionId);
+        answerRequest.setQuestion(questionEntity);
+        AnswerEntity answerEntity1 = answerBusinessService.createAnswer(answerEntity,authorization);
+        AnswerResponse answerResponse = new AnswerResponse().id(answerEntity.getUuid()).status("Answer Created");
+        return new ResponseEntity<AnswerResponse>(answerResponse, HttpStatus.CREATED);
+    }
     /**
      * A controller method to edit an answer in the database.
      *
@@ -47,7 +61,15 @@ public class AnswerController {
      * @throws AuthorizationFailedException
      * @throws AnswerNotFoundException
      */
-
+    @PutMapping("/answer/edit/{answerId}")
+    public ResponseEntity<AnswerEditResponse> editAnswer(@RequestBody AnswerEditRequest answerEditRequest, @RequestHeader String authorization, @PathVariable String answerId) throws AuthorizationFailedException, AnswerNotFoundException
+    {
+        AnswerEntity answerEntity=new AnswerEntity();
+        answerEntity.setAns(answerEditRequest.getAns());
+        AnswerEntity answerEntity1 = answerBusinessService.editAnswerContent(answerEntity,  answerId,  authorization);
+        AnswerEditResponse answerEditResponse =new AnswerEditResponse().id(answerEntity.getUuid()).status("Answer Edited");
+        return new ResponseEntity<AnswerEditResponse>(answerEditResponse, HttpStatus.EDITED);
+    }
     /**
      * A controller method to delete an answer in the database.
      *
@@ -57,6 +79,13 @@ public class AnswerController {
      * @throws AuthorizationFailedException
      * @throws AnswerNotFoundException
      */
+    @DeleteMapping("/answer/delete/{answerId}")
+    public ResponseEntity<AnswerDeleteResponse> deleteAnswer(@PathVariable String answerId, @RequestHeader("authorization") String authorization) throws AuthorizationFailedException, AnswerNotFoundException
+    {
+        AnswerEntity answerEntity = answerBusinessService.deleteAnswer(answerId, authorization);
+        AnswerDeleteResponse answerDeleteResponse = new AnswerDeleteResponse().id(answerEntity.getUuid()).status("Answer Deleted");
+        return new ResponseEntity<AnswerDeleteResponse>(answerDeleteResponse,HttpStatus.DELETED);
+    }
 
     /**
      * A controller method to fetch all the answers for a specific question in the database.
@@ -67,5 +96,18 @@ public class AnswerController {
      * @throws AuthorizationFailedException
      * @throws InvalidQuestionException
      */
-
+    @GetMapping("/answer/all/{questionId}")
+    public ResponseEntity<List<AnswerDetailsResponse>> getAllByquestionId(@PathVariable String questionId, @RequestHeader("auhtorization") String authorization) throws AuthorizationFailedException, InvalidQuestionException
+    {
+        TypedQuery<AnswerEntity> answerList = answerBusinessService.getAnswersByQuestion(questionId, authorization);
+        List<AnswerEntity> resultList = answerList.getResultList();
+        List<AnswerDetailsResponse> responseList = resultList.stream()
+                .map(answer -> {
+                    AnswerDetailsResponse response = new AnswerDetailsResponse();
+                    response.setAns(answer.getAns());
+                    response.setId(answer.getUuid());
+                    return response;
+                }).collect(Collectors.toList());
+        return new ResponseEntity<>(responseList, HttpStatus.OK);
+    }
 }
