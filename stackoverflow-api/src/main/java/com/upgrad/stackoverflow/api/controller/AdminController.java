@@ -10,7 +10,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 @RequestMapping("/admin")
 public class AdminController {
 
@@ -35,4 +34,3 @@ public class AdminController {
         userDeleteResponse.setStatus("USER SUCCESSFULLY DELETED");
         return new ResponseEntity<>(userDeleteResponse, HttpStatus.OK);
     }
-}
