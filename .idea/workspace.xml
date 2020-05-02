@@ -19,8 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented AdminController">
+    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented UserBusinessService.java">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stackoverflow-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stackoverflow-db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stackoverflow-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stackoverflow-service/src/main/java/com/upgrad/stackoverflow/service/business/UserBusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stackoverflow-service/src/main/java/com/upgrad/stackoverflow/service/business/UserBusinessService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +46,7 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="ProjectId" id="1aHLL4zz2KE0MZLvmGQ54lpRevX" />
   <component name="ProjectViewState">
@@ -52,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Stackoverflow-backend-develop-controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -171,6 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586387513959</updated>
       <workItem from="1588449761911" duration="1719000" />
+      <workItem from="1588452924849" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="Added README.md">
       <created>1588450371189</created>
@@ -221,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588451389756</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed QuestionBusinessService.java">
+      <created>1588452982990</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588452982990</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +252,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added README.md" />
@@ -245,7 +261,9 @@
     <MESSAGE value="Minor Update" />
     <MESSAGE value="Implemented CommonController" />
     <MESSAGE value="Implemented AdminController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented AdminController" />
+    <MESSAGE value="Fixed QuestionBusinessService.java" />
+    <MESSAGE value="Implemented UserBusinessService.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented UserBusinessService.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="321" y="0" width="1030" height="732" key="#Project_Structure" timestamp="1588450009453">
@@ -253,10 +271,10 @@
     </state>
     <state x="321" y="0" width="1030" height="732" key="#Project_Structure/0.0.1366.735@0.0.1366.735" timestamp="1588450009453" />
     <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1586684381350" />
-    <state x="560" y="21" width="806" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588450087381">
+    <state x="560" y="21" width="806" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588453309902">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="560" y="21" width="806" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.735@0.0.1366.735" timestamp="1588450087381" />
+    <state x="560" y="21" width="806" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.735@0.0.1366.735" timestamp="1588453309902" />
     <state x="618" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586683868409">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -297,10 +315,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586702177990" />
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588451391243">
+    <state x="570" y="239" width="422" height="260" key="MultipleFileMergeDialog" timestamp="1588453109108">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588451391243" />
+    <state x="570" y="239" width="422" height="260" key="MultipleFileMergeDialog/0.0.1366.735@0.0.1366.735" timestamp="1588453109108" />
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588453117694">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588453117694" />
+    <state x="1002" y="160" width="197" height="270" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1588453291175">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="1002" y="160" width="197" height="270" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.735@0.0.1366.735" timestamp="1588453291175" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586766211852">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -309,10 +335,14 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="481" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.735@0.0.1366.735" timestamp="1588450387655" />
-    <state x="387" y="160" width="588" height="414" key="git4idea.merge.GitPullDialog" timestamp="1588450770850">
+    <state x="387" y="160" width="588" height="414" key="git4idea.merge.GitPullDialog" timestamp="1588453098813">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="387" y="160" width="588" height="414" key="git4idea.merge.GitPullDialog/0.0.1366.735@0.0.1366.735" timestamp="1588450770850" />
+    <state x="387" y="160" width="588" height="414" key="git4idea.merge.GitPullDialog/0.0.1366.735@0.0.1366.735" timestamp="1588453098813" />
+    <state x="344" y="16" width="672" height="676" key="search.everywhere.popup" timestamp="1588452965210">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="344" y="16" width="672" height="676" key="search.everywhere.popup/0.0.1366.735@0.0.1366.735" timestamp="1588452965210" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stackoverflow$controller_in_stackoverflow_api.ic" NAME="controller in stackoverflow-api Coverage Results" MODIFIED="1586405720163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
