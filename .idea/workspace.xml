@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Added CODE_OF_CONDUCT.md" />
+    <list default="true" id="8ee68671-da64-4066-b526-88d1ab7055e0" name="Default Changelist" comment="Implemented QuestionController" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,6 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586387513959</updated>
       <workItem from="1588449761911" duration="1378000" />
+      <workItem from="1588451488203" duration="140000" />
     </task>
     <task id="LOCAL-00001" summary="Added README.md">
       <created>1588450371189</created>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588450864421</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented QuestionController">
+      <created>1588451578966</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588451578966</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,13 +208,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added README.md" />
     <MESSAGE value="Added CODE_OF_CONDUCT.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CODE_OF_CONDUCT.md" />
+    <MESSAGE value="Implemented QuestionController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented QuestionController" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="566" y="244" width="229" height="247" key="#Notifications" timestamp="1588451627335">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="566" y="244" width="229" height="247" key="#Notifications/0.0.1366.735@0.0.1366.735" timestamp="1588451627335" />
     <state x="321" y="0" width="1030" height="732" key="#Project_Structure" timestamp="1588450009453">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
@@ -252,10 +266,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586702177990" />
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588450865725">
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1588451580384">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588450865725" />
+    <state x="278" y="105" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1588451580384" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586766211852">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
