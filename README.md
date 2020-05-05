@@ -1,4 +1,4 @@
-# StackOverflow Project
+# StackOverflow Project :book:
 
  In this project, we have worked on developing REST API endpoints of various functionalities required for a stackoverflow website from scratch. 
  
